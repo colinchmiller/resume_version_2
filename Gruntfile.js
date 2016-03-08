@@ -22,6 +22,15 @@ module.exports = (function(grunt){
         cwd: 'client/styles',
         src: 'stylesheet.css',
         dest: 'server/public/assets/styles'
+      },
+      bootstrap: {
+        expand: true,
+        cwd: 'node_modules/bootstrap/dist/css',
+        src: [
+          'bootstrap.min.css',
+          'bootstrap.min.css.map'
+        ],
+        dest: 'server/public/vendors'
       }
     }
   });
